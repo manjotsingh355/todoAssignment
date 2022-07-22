@@ -1,0 +1,18 @@
+<div class="example-container">
+    <div style="margin:1rem;margin-left: 1.5rem;">{{title}}
+        <div style="float: right;background-color: aliceblue;padding: 0 3px 0 3px; border-radius: 5px; color: rgb(49, 159, 131);" >
+            {{list.length}}
+        </div>
+    </div>
+    <div class="button-div">
+        <button mat-raised-button class="title-button" (click)="plusClick()">+</button>
+    </div>
+    <div cdkDropList id="{{title}}" [cdkDropListData]="list" [cdkDropListConnectedTo]="associatdList" class="example-list"
+        (cdkDropListDropped)="changeList($event)">
+        <div class="example-box" *ngFor="let item of list" cdkDrag>
+            <div class="item">
+                <app-task [data]="item"></app-task>
+            </div>
+        </div>
+    </div>
+</div>

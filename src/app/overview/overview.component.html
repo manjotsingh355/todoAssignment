@@ -1,0 +1,5 @@
+<div class="stage-grid">
+    <app-stage title="To Do" [list]="todo" [associatdList]="['In Progress','Completed']" (dragAndDrop)="changeList($event)" (event)="toDoFunction()"></app-stage>
+    <app-stage title="In Progress" [list]="inProgress" [associatdList]="['To Do','Completed']" (dragAndDrop)="changeList($event)" (event)="openDialog()"></app-stage>
+    <app-stage title="Completed" [list]="completed" [associatdList]="['In Progress','To Do']" (dragAndDrop)="changeList($event)"></app-stage>
+</div>

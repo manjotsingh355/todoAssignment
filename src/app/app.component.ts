@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todoAssignment';
+  selected='Home'
+  changeSelected(selected:string){
+    this.selected=selected;
+  }
 }

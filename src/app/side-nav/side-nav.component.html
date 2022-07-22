@@ -1,0 +1,39 @@
+<mat-nav-list style="background-color:rgb(249, 249, 249);" >
+    <div class="logo py-4">
+        <h3 style="margin-left: 20px;">
+            .studio
+        </h3>
+    </div>
+    <mat-divider style="border: none;"></mat-divider>
+    <a mat-list-item routerLink="" routerLinkActive="list-item-active" (click)="selected('Overview')">
+        <mat-icon>home</mat-icon>
+        <div style="margin-left: 2rem;">
+            Overview
+        </div>
+    </a>
+    <a mat-list-item>
+        <mat-icon> bar_chart</mat-icon>
+        <div style="margin-left: 2rem;">
+            Stats
+        </div>
+    </a>
+    <a mat-list-item (click)="selected('Projects')">
+        <mat-icon>folder</mat-icon>
+        <div style="margin-left: 2rem;">
+            Projects
+        </div>
+    </a>
+    <a mat-list-item>
+        <mat-icon>chat</mat-icon>
+        <div style="margin-left: 2rem;">
+            Chat
+        </div>
+    </a>
+    <a mat-list-item>
+        <mat-icon>calendar_today</mat-icon>
+        <div style="margin-left: 2rem;">
+            Calendar
+        </div>
+    </a>
+    <mat-divider style="border: none;"></mat-divider>
+</mat-nav-list>

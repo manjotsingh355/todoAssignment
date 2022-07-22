@@ -1,0 +1,15 @@
+<div class="task-container">
+    <div style="font-size: 15px;font-weight: 500">
+        · {{data.title}}
+        <div style="float: right; color: white;" *ngIf="data.imageString" (click)="showImage(data.imageString)">
+            📎
+        </div>
+    </div>
+    <div style="margin-top: 1rem; font-weight: lighter; font-size: small;color: rgb(104, 104, 104);">
+        {{data.description}}
+    </div>
+    <div style="margin-top: 1rem; font-weight: lighter; font-size: small;color: rgb(104, 104, 104);">
+        Priority: {{data.priority}}
+    </div>
+
+</div>

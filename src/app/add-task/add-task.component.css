@@ -1,0 +1,10 @@
+.addTaskForm{
+    padding: 5rem;
+}
+.addTaskForm button{
+    margin-right: 1rem;
+}
+.heading{
+    margin: 1rem;
+    text-align: center;
+}
